@@ -1,0 +1,67 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "shippingFrom": "Mumbai",
+      "shippingTo": "Pune",
+      "orderStatus": "In-Transit",
+      "currentStatus": "Shipped From Mumbai",
+      "shippingAddress": "Costa Rica, Wakad",
+      "expectedArrival": "10/01/2021",
+      "alternatePickups": [
+        {
+          "id": 1,
+          "name": "Central hub, Wakad"
+        },
+        {
+          "id": 2,
+          "name": "Shipping Hub, Kaspate wasti"
+        }
+      ],
+      "specificInstruction": null,
+      "scheduleDropOff": null
+    },
+    {
+      "id": 2,
+      "shippingFrom": "Kolkata",
+      "shippingTo": "Ahmedabad",
+      "orderStatus": "In-Transit",
+      "currentStatus": "Dispatched to Kolkata Hub",
+      "shippingAddress": "Thakkar Faliya, Station Road",
+      "expectedArrival": "10/01/2021",
+      "alternatePickups": [
+        {
+          "id": 1,
+          "name": "Central hub, Manekchowk"
+        },
+        {
+          "id": 2,
+          "name": "Shipping Hub, Sarasvati Chowk"
+        }
+      ],
+      "specificInstruction": null,
+      "scheduleDropOff": null
+    },
+    {
+      "id": 3,
+      "shippingFrom": "Bangalore",
+      "shippingTo": "Delhi",
+      "orderStatus": "In-Transit",
+      "currentStatus": "Shipped From Mumbai",
+      "shippingAddress": "Costa Rica, Wakad",
+      "expectedArrival": "10/01/2021",
+      "alternatePickups": [
+        {
+          "id": 1,
+          "name": "Central hub, Wakad"
+        },
+        {
+          "id": 2,
+          "name": "Shipping Hub, Kaspate wasti"
+        }
+      ],
+      "specificInstruction": null,
+      "scheduleDropOff": null
+    }
+  ]
+}

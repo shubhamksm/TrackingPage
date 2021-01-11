@@ -1,22 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import axios from 'axios';
+import SearchBar from './Components/SearchBar';
+import TrackingInfo from './Components/TrackingInfo';
 
-function App() {
+const App = () => {
+
+  const [trackingData, setTrackingData] = useState({});
+
+  const fetchData = async (requestedId) => {
+    const response = await axios({ method: 'get', baseURL: 'http://localhost:3000/orders/', url:`${requestedId}` });
+    setTrackingData({ ...response.data });
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>Main App</div>
+        <SearchBar fetchData={fetchData} />
+        <TrackingInfo trackingData={trackingData} />
       </header>
     </div>
   );
